@@ -35,6 +35,7 @@ import java.util.Scanner ;
             
             double guessF = (2*guessE*guessE*guessE+number)/(3*guessE*guessE) ;
             
+// Prints the estimated cube root and shows the user the calculation.           
             System.out.println("The cube root is " + guessF + "." ) ;
             System.out.println(guessF + "*" + guessF + "*" + guessF + " is " + guessF*guessF*guessF + ".") ;
             
