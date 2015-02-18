@@ -2,20 +2,33 @@
 // CSE2 Spring2015
 // HW 04 What Number?
 
+// Importing Scanner utility
 import java.util.Scanner;
 
+// Defining Public Class
 public class WhichNumber {
-    
+
+// Defining Main Method    
     public static void main(String[] args) { ;
-        
+
+    // Declaring a new Scanner
         Scanner myScanner = new Scanner(System.in);
         
+   // Asks the user for initial input   
         System.out.println("Think of a number between one and ten and I will try to guess it.");
         
         System.out.println("Is the number even?");
         
+   // Strings A through I are used to figure out which number the user is thinking of.
+   // They store yes or no answers from the user and based on these inputs will bring to user
+   // to a different string depending on the input.
         String A = myScanner.next();
-        
+  
+   // The program works by asking the user a series of yes or no questions using if and else if
+   // statements. The else and else if statements direct the user to the numbers they are thinking
+   // of by asking questions that help to narrow down which number it could be.
+   // The else statements verify if the user is imputing yes or no as answers, and prevent
+   // the user from inputing useless information.
         if (A.equals("Yes")) { 
             
             System.out.println("Is the number divisible by 3?");
@@ -26,6 +39,7 @@ public class WhichNumber {
                 
                 System.out.println("Is your number 6?");
                 
+           // Strings J through R verify that the input is either correct.     
                 String J = myScanner.next();
                         
                     if(J.equals("Yes")) {
@@ -237,5 +251,8 @@ public class WhichNumber {
     }
 }
 }
-    
+// We see in this program that bracket matching is essential for if, if else, and else statements
+// to properly run. If one bracket is out of place, it is possible for the entire code to be incorrect
+// and either not run or output the wrong information. I found that this was the easiest way to debug the 
+// program.
     
